@@ -1,23 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
     
+    // ===================================================
     // 1. INISIALISASI AOS (Animate On Scroll)
-    // Mengaktifkan efek visual saat user scroll ke elemen baru.
+    // ===================================================
     AOS.init({
-        offset: 200,      // Jarak (dalam px) dari bottom of viewport untuk mulai animasi
-        duration: 1000,   // Durasi animasi (ms)
-        easing: 'ease-out', // Kurva easing
-        once: true        // Hanya jalankan animasi sekali per elemen
+        offset: 200,      
+        duration: 1000,   
+        easing: 'ease-out', 
+        once: true        
     });
 
-    // 2. INISIALISASI SWIPER UNTUK SEMUA 8 PERIODE
+    // ===================================================
+    // 2. INISIALISASI SWIPER (Slideshow)
+    // ===================================================
     
     // Parameter dasar untuk semua Swiper
     const swiperParams = {
         direction: 'horizontal',
-        loop: true, // Loop agar slide berputar tak terbatas
+        loop: true,
         slidesPerView: 1,
         spaceBetween: 0,
-        effect: 'fade', // Transisi fade yang elegan
+        effect: 'fade',
         fadeEffect: {
             crossFade: true,
         },
@@ -30,30 +33,64 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: '.swiper-button-prev',
         },
         autoplay: {
-             delay: 4500, // Ganti slide setiap 4.5 detik
-             disableOnInteraction: false, // Lanjutkan autoplay setelah interaksi manual
+             delay: 4500,
+             disableOnInteraction: false,
         },
     };
 
-    // Daftar ID Swiper (Class di HTML: swiper-NAMA) berdasarkan nama folder/periode Anda
+    // Daftar ID Swiper
     const periodSlugs = [
-        'pembukaan', 
-        'pusdikkes', 
-        'klasikal', 
-        'kelas_besar', 
-        'main_olahraga', 
-        'gathering_bandung', 
-        'foto_lppi', 
-        'makrab'
+        'pembukaan', 'pusdikkes', 'klasikal', 'kelas_besar', 
+        'main_olahraga', 'gathering_bandung', 'foto_lppi', 'makrab'
     ];
 
     // Lakukan inisialisasi untuk setiap Swiper
     periodSlugs.forEach(slug => {
         const swiperClass = `.swiper-${slug}`;
-        // Pastikan elemen Swiper ada di halaman sebelum diinisialisasi
         if (document.querySelector(swiperClass)) {
              new Swiper(swiperClass, swiperParams);
         }
     });
+
+
+    // ===================================================
+    // 3. FUNGSI KONTROL MUSIK
+    // ===================================================
+
+    const backgroundMusic = document.getElementById('background-music');
+    const musicToggleButton = document.querySelector('.music-toggle-btn');
+    const openButton = document.querySelector('.cta-button'); 
+
+    // Fungsi untuk Play/Pause (dipakai oleh tombol di header)
+    function toggleMusic() {
+      if (backgroundMusic.paused) {
+        backgroundMusic.play();
+        musicToggleButton.textContent = '⏸️ Pause'; // Update UI
+      } else {
+        backgroundMusic.pause();
+        musicToggleButton.textContent = '▶️ Play'; // Update UI
+      }
+    }
+
+    // Pasang fungsi toggleMusic ke tombol Play/Pause di header
+    if (musicToggleButton) {
+        musicToggleButton.addEventListener('click', toggleMusic);
+        // Atur teks tombol awal
+        musicToggleButton.textContent = '▶️ Play'; 
+    }
+
+    // Pemicu Utama: Tombol "Open The Book"
+    if (openButton) {
+      openButton.addEventListener('click', () => {
+        // Cek apakah musik belum berputar
+        if (backgroundMusic.paused) {
+            // Putar musik (Ini diizinkan karena merupakan klik pertama user)
+            backgroundMusic.play();
+            // Update tombol Play/Pause di header
+            musicToggleButton.textContent = '⏸️ Pause';
+        }
+        // Fungsi default link (scroll ke #pembukaan) tetap berjalan
+      });
+    }
 
 });
