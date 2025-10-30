@@ -1,0 +1,70 @@
+body {
+  font-family: 'Playfair Display', serif;
+  background: #f8f5f2;
+  color: #444;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  background: url('../images/cover.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.scroll-btn {
+  padding: 10px 20px;
+  background: #fff;
+  color: #444;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.scroll-btn:hover { background: #e6e6e6; }
+
+.memory-section {
+  padding: 80px 20px;
+}
+.memory-section h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.swiper {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+.swiper-slide img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.swiper-slide p {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.closing {
+  background: #fafafa;
+  padding: 60px 20px;
+}
