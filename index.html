@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+    <audio id="background-music" loop>
+        <source src="assets/sampai-jumpa.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+    <button class="music-toggle-btn" onclick="toggleMusic()">▶️ Play / ⏸️ Pause</button>
     
     <header class="hero">
         <div class="overlay"></div>
@@ -31,7 +36,6 @@
                 <h2>1. Awal Perjalanan</h2>
                 <p class="caption">Hari-hari pertama yang penuh harapan dan semangat</p>
             </div>
-
             <div class="swiper swiper-pembukaan" data-aos="zoom-in-up" data-aos-delay="300">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="images/pembukaan/IMG-20250811-WA0010.jpg" alt="Foto Pembukaan 1"></div>
@@ -42,8 +46,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-
-        <section class="message period-break" data-aos="fade-right">
+        <section class="message period-break" data-aos="fade-up">
             <p>"Setiap langkah kita adalah puisi. Di sinilah kisah terindah ini ditulis, dengan takdir sebagai penuntunnya."</p>
             <span class="message-tag">— Babak 1: Awal</span>
         </section>
@@ -63,8 +66,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-
-        <section class="message period-break" data-aos="fade-left">
+        <section class="message period-break" data-aos="fade-up">
             <p>"Di tengah badai kita bertahan, di tengah tekanan kita mengakar. Kita membuktikan, hati kita teruji oleh waktu."</p>
             <span class="message-tag">— Babak 2: Penguatan</span>
         </section>
@@ -84,8 +86,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-
-        <section class="message period-break" data-aos="fade-right">
+        <section class="message period-break" data-aos="fade-up">
             <p>"Ruang ini menjadi saksi bisu setiap tawa dan seriusnya kita. Kamu adalah inspirasi, dan aku adalah pendamping setiamu."</p>
             <span class="message-tag">— Babak 3: Pengetahuan</span>
         </section>
@@ -106,8 +107,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-
-        <section class="message period-break" data-aos="fade-left">
+        <section class="message period-break" data-aos="fade-up">
             <p>"Di bawah langit-langit aula, janji tak terucapkan terukir. Kita bukan hanya rekan, kita adalah takdir yang saling melengkapi."</p>
             <span class="message-tag">— Babak 4: Janji</span>
         </section>
@@ -131,8 +131,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-
-        <section class="message period-break" data-aos="fade-right">
+        <section class="message period-break" data-aos="fade-up">
             <p>"Keringat dan semangat menjadi bumbu kisah kita. Setiap permainan adalah perayaan kebersamaan yang tulus dan penuh arti."</p>
             <span class="message-tag">— Babak 5: Perayaan</span>
         </section>
@@ -158,8 +157,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-
-        <section class="message period-break" data-aos="fade-left">
+        <section class="message period-break" data-aos="fade-up">
             <p>"Jalan-jalan di kota kembang, setiap sudutnya melukiskan memori indah. Engkau dan aku, selamanya dalam cerita perjalanan ini."</p>
             <span class="message-tag">— Babak 6: Jelajah</span>
         </section>
@@ -167,13 +165,11 @@
         <section class="period" id="foto_lppi">
             <div class="period-header" data-aos="fade-up">
                 <h2>7. Kebersamaan Abadi (Foto LPPI)</h2>
-                <p class="caption">Momen resmi yang membekukan waktu dalam satu bingkai</p>
+                <p class="caption">Momen resmi yang membekukan waktu, sebelum kita berpisah ke jalan masing-masing</p>
             </div>
             <div class="swiper swiper-foto_lppi" data-aos="zoom-in-up" data-aos-delay="300">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="images/foto_lppi/20251015_104612.jpg" alt="Foto LPPI 1"></div>
-                    <div class="swiper-slide"><img src="images/foto_lppi/Copy of DSC05419.JPG" alt="Foto LPPI 2"></div>
-                    <div class="swiper-slide"><img src="images/foto_lppi/Copy of DSC05448.JPG" alt="Foto LPPI 3"></div>
                     <div class="swiper-slide"><img src="images/foto_lppi/IMG-20250922-WA0012.jpg" alt="Foto LPPI 4"></div>
                 </div>
                 <div class="swiper-button-next"></div>
@@ -181,10 +177,9 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-
-        <section class="message period-break" data-aos="fade-right">
-            <p>"Tersenyum di depan kamera, membekukan waktu. Di sinilah persatuan jiwa kita menemukan rumah yang sesungguhnya."</p>
-            <span class="message-tag">— Babak 7: Abadi</span>
+        <section class="message period-break" data-aos="fade-up">
+            <p>"Kita terpaksa beranjak, meninggalkan tawa yang menggema di setiap lorong. Tetapi ingatlah, perpisahan hanyalah kata, sementara kenangan adalah **keabadian**."</p>
+            <span class="message-tag">— Babak 7: Perpisahan</span>
         </section>
 
         <section class="period" id="makrab">
@@ -200,6 +195,28 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="message period-break final-break" data-aos="fade-up">
+            <p>"Kita tak pernah benar-benar pergi. Kita hanya menyimpan cerita di tempat yang berbeda, menunggu saat di mana jalan kita bertemu lagi."</p>
+            <span class="message-tag">— Harapan</span>
+        </section>
+
+        <section class="period final-highlight" id="lppi-highlight">
+            <div class="highlight-text" data-aos="fade-up">
+                <h2 class="elegant-title">Momen Kita, Selamanya</h2>
+                <p class="caption">
+                    Ada kenangan yang terlalu suci untuk sekadar digulirkan. Inilah puncak dari segala cerita, potret di mana waktu seolah berhenti dan kita tahu, ini bukan akhir, **hanyalah jeda yang sangat berarti.**
+                </p>
+            </div>
+            <div class="highlight-photos">
+                <div class="highlight-photo" data-aos="fade-up" data-aos-delay="500">
+                    <img src="images/foto_lppi/Copy of DSC05419.JPG" alt="Highlight Foto LPPI 1">
+                </div>
+                <div class="highlight-photo" data-aos="fade-up" data-aos-delay="700">
+                    <img src="images/foto_lppi/Copy of DSC05448.JPG" alt="Highlight Foto LPPI 2">
+                </div>
             </div>
         </section>
 
