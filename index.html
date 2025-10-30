@@ -1,59 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Journey Memories</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journey Memories - Our Complete Story</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Journey Memories</h1>
-    <p>Our story through the years</p>
-  </header>
+    
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-text" data-aos="fade-down" data-aos-duration="1500">
+            <h1 class="elegant-title">Journey Memories</h1>
+            <p>Our complete story — a beautiful tale through time</p>
+            <a href="#pembukaan" class="cta-button">Open The Book</a>
+        </div>
+    </header>
 
-  <section class="period" id="period-2019">
-    <h2>2019 — The Beginning</h2>
-    <p class="caption">The start of our unforgettable journey</p>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/2019/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="images/2019/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="images/2019/3.jpg" alt=""></div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-  </section>
+    <main id="journey-start">
+        
+        <section class="period" id="pembukaan">
+            <div class="period-header" data-aos="fade-up">
+                <h2>1. Awal Perjalanan</h2>
+                <p class="caption">Hari-hari pertama yang penuh harapan dan semangat</p>
+            </div>
 
-  <section class="period" id="period-2020">
-    <h2>2020 — New Chapter</h2>
-    <p class="caption">We kept growing stronger</p>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/2020/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="images/2020/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="images/2020/3.jpg" alt=""></div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-  </section>
+            <div class="swiper swiper-pembukaan" data-aos="zoom-in-up" data-aos-delay="300">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/pembukaan/IMG-20250811-WA0010.jpg" alt="Foto Pembukaan 1"></div>
+                    <div class="swiper-slide"><img src="images/pembukaan/IMG-20250811-WA0040.jpg" alt="Foto Pembukaan 2"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
-  <footer>
-    <p>Made with ❤️ by Guntur Awaludin Saptadi</p>
-  </footer>
+        <section class="message period-break" data-aos="fade-right">
+            <p>"Setiap langkah kita adalah puisi. Di sinilah kisah terindah ini ditulis, dengan takdir sebagai penuntunnya."</p>
+            <span class="message-tag">— Babak 1: Awal</span>
+        </section>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+        <section class="period" id="pusdikkes">
+            <div class="period-header" data-aos="fade-up">
+                <h2>2. Pelatihan Intensif (Pusdikkes)</h2>
+                <p class="caption">Momen kebersamaan di tengah tantangan yang menguatkan</p>
+            </div>
+            <div class="swiper swiper-pusdikkes" data-aos="zoom-in-up" data-aos-delay="300">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/pusdikkes/IMG-20250817-WA0084.jpg" alt="Foto Pusdikkes 1"></div>
+                    <div class="swiper-slide"><img src="images/pusdikkes/IMG-20251028-WA0029.jpg" alt="Foto Pusdikkes 2"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="message period-break" data-aos="fade-left">
+            <p>"Di tengah badai kita bertahan, di tengah tekanan kita mengakar. Kita membuktikan, hati kita teruji oleh waktu."</p>
+            <span class="message-tag">— Babak 2: Penguatan</span>
+        </section>
+        
+        <section class="period" id="klasikal">
+            <div class="period-header" data-aos="fade-up">
+                <h2>3. Kelas Belajar (Klasikal)</h2>
+                <p class="caption">Setiap ilmu yang kita raih, kenangan yang kita genggam erat</p>
+            </div>
+            <div class="swiper swiper-klasikal" data-aos="zoom-in-up" data-aos-delay="300">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/klasikal/20250812_154009.jpg" alt="Foto Klasikal 1"></div>
+                    <div class="swiper-slide"><img src="images/klasikal/20250825_173725.jpg" alt="Foto Klasikal 2"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="message period-break" data-aos="fade-right">
+            <p>"Ruang ini menjadi saksi bisu setiap tawa dan seriusnya kita. Kamu adalah inspirasi, dan aku adalah pendamping setiamu."</p>
+            <span class="message-tag">— Babak 3: Pengetahuan</span>
+        </section>
+
+        <section class="period" id="kelas_besar">
+            <div class="period-header" data-aos="fade-up">
+                <h2>4. Materi di Kelas Aula</h2>
+                <p class="caption">Ruang besar yang menjadi saksi bisu impian kita</p>
+            </div>
+            <div class="swiper swiper-kelas_besar" data-aos="zoom-in-up" data-aos-delay="300">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/kelas_besar/20250822_154041.jpg" alt="Foto Kelas Besar 1"></div>
+                    <div class="swiper-slide"><img src="images/kelas_besar/IMG-20250811-WA0052.jpg" alt="Foto Kelas Besar 2"></div>
+                    <div class="swiper-slide"><img src="images/kelas_besar/IMG-20250811-WA0060.jpg" alt="Foto Kelas Besar 3"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="message period-break" data-aos="fade-left">
+            <p>"Di bawah langit-langit aula, janji tak terucapkan terukir. Kita bukan hanya rekan, kita adalah takdir yang saling melengkapi."</p>
+            <span class="message-tag">— Babak 4: Janji</span>
+        </section>
+        
+        <section class="period" id="main_olahraga">
+            <div class="period-header" data-aos="fade-up">
+                <h2>5. Keriaan dan Tawa (Main Olahraga)</h2>
+                <p class="caption">Semangat, keringat, dan momen kejutan yang tak terlupakan</p>
+            </div>
+            <div class="swiper swiper-main_olahraga" data-aos="zoom-in-up" data-aos-delay="300">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/main_olahraga/20251025_204438.jpg" alt="Foto Olahraga 1"></div>
+                    <div class="swiper-slide"><img src="images/main_olahraga/IMG-20250828-WA0028.jpg" alt="Foto Olahraga 2"></div>
+                    <div class="swiper-slide"><img src="images/main_olahraga/IMG-20250910-WA0066.jpg" alt="Foto Olahraga 3"></div>
+                    <div class="swiper-slide"><img src="images/main_olahraga/IMG-20250915-WA0026.jpg" alt="Foto Olahraga 4"></div>
+                    <div class="swiper-slide"><img src="images/main_olahraga/IMG-20251008-WA0013.jpg" alt="Foto Olahraga 5"></div>
+                    <div class="swiper-slide"><img src="images/main_olahraga/IMG-20251022-WA0021.jpg" alt="Foto Olahraga 6"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="message period-break" data-aos="fade-right">
+            <p>"Keringat dan semangat menjadi bumbu kisah kita. Setiap permainan adalah perayaan kebersamaan yang tulus dan penuh arti."</p>
+            <span class="message-tag">— Babak 5: Perayaan</span>
+        </section>
+        
+        <section class="period" id="gathering_bandung">
+            <div class="period-header" data-aos="fade-up">
+                <h2>6. Jelajah Romansa (Gathering Bandung)</h2>
+                <p class="caption">Menemukan keindahan kota kembang bersama-sama</p>
+            </div>
+            <div class="swiper swiper-gathering_bandung" data-aos="zoom-in-up" data-aos-delay="300">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/gathering_bandung/IMG-20251025-WA0103.jpg" alt="Foto Bandung 1"></div>
+                    <div class="swiper-slide"><img src="images/gathering_bandung/IMG-20251026-WA0067.jpg" alt="Foto Bandung 2"></div>
+                    <div class="swiper-slide"><img src="images/gathering_bandung/IMG-20251030-WA0063.jpg" alt="Foto Bandung 3"></div>
+                    <div class="swiper-slide"><img src="images/gathering_bandung/IMG-20251030-WA0100.jpg" alt="Foto Bandung 4"></div>
+                    <div class="swiper-slide"><img src="images/gathering_bandung/IMG-20251030-WA0105.jpg" alt="Foto Bandung 5"></div>
+                    <div class="swiper-slide"><img src="images/gathering_bandung/IMG-20251030-WA0130.jpg" alt="Foto Bandung 6"></div>
+                    <div class="swiper-slide"><img src="images/gathering_bandung/IMG-20251030-WA0160.jpg" alt="Foto Bandung 7"></div>
+                    <div class="swiper-slide"><img src="images/gathering_bandung/IMG-20251030-WA0200.jpg" alt="Foto Bandung 8"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="message period-break" data-aos="fade-left">
+            <p>"Jalan-jalan di kota kembang, setiap sudutnya melukiskan memori indah. Engkau dan aku, selamanya dalam cerita perjalanan ini."</p>
+            <span class="message-tag">— Babak 6: Jelajah</span>
+        </section>
+
+        <section class="period" id="foto_lppi">
+            <div class="period-header" data-aos="fade-up">
+                <h2>7. Kebersamaan Abadi (Foto LPPI)</h2>
+                <p class="caption">Momen resmi yang membekukan waktu dalam satu bingkai</p>
+            </div>
+            <div class="swiper swiper-foto_lppi" data-aos="zoom-in-up" data-aos-delay="300">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/foto_lppi/20251015_104612.jpg" alt="Foto LPPI 1"></div>
+                    <div class="swiper-slide"><img src="images/foto_lppi/Copy of DSC05419.JPG" alt="Foto LPPI 2"></div>
+                    <div class="swiper-slide"><img src="images/foto_lppi/Copy of DSC05448.JPG" alt="Foto LPPI 3"></div>
+                    <div class="swiper-slide"><img src="images/foto_lppi/IMG-20250922-WA0012.jpg" alt="Foto LPPI 4"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="message period-break" data-aos="fade-right">
+            <p>"Tersenyum di depan kamera, membekukan waktu. Di sinilah persatuan jiwa kita menemukan rumah yang sesungguhnya."</p>
+            <span class="message-tag">— Babak 7: Abadi</span>
+        </section>
+
+        <section class="period" id="makrab">
+            <div class="period-header" data-aos="fade-up">
+                <h2>8. Puncak Kenangan (Makrab)</h2>
+                <p class="caption">Mengakhiri babak ini dengan senyum dan kenangan hangat</p>
+            </div>
+            <div class="swiper swiper-makrab" data-aos="zoom-in-up" data-aos-delay="300">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/makrab/IMG-20251029-WA0095.jpg" alt="Foto Makrab 1"></div>
+                    <div class="swiper-slide"><img src="images/makrab/IMG-20251029-WA0096.jpg" alt="Foto Makrab 2"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="message final-message">
+            <div data-aos="zoom-in" data-aos-duration="1500">
+                <h2 class="elegant-title">Terima Kasih</h2>
+                <p>This journey has been a masterpiece woven with shared laughter, challenges, and success. The memories forged here will last a lifetime.</p>
+                <p class="signature">Guntur Awaludin Saptadi</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Journey Memories. Made with ❤️ by Guntur.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
