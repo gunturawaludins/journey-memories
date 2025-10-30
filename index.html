@@ -5,62 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Journey Memories</title>
 
-  <!-- SwiperJS & AOS (for animation) -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>Journey Memories</h1>
+    <p>Our story through the years</p>
+  </header>
 
-  <!-- Opening Section -->
-  <section class="hero" data-aos="fade-in">
-    <h1 class="title">Journey of Our Memories</h1>
-    <p class="subtitle">A collection of precious moments through time</p>
-    <a href="#period-1" class="scroll-btn">Scroll to Begin</a>
-  </section>
-
-  <!-- Period 1 -->
-  <section id="period-1" class="memory-section" data-aos="fade-up">
+  <section class="period" id="period-2019">
     <h2>2019 — The Beginning</h2>
+    <p class="caption">The start of our unforgettable journey</p>
     <div class="swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/2019-1.jpg" alt=""><p>Our first adventure</p></div>
-        <div class="swiper-slide"><img src="images/2019-2.jpg" alt=""><p>Laughs and stories</p></div>
-        <div class="swiper-slide"><img src="images/2019-3.jpg" alt=""><p>Unforgettable day</p></div>
+        <div class="swiper-slide"><img src="images/2019/1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/2019/2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/2019/3.jpg" alt=""></div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
     </div>
   </section>
 
-  <!-- Period 2 -->
-  <section id="period-2" class="memory-section" data-aos="fade-up">
+  <section class="period" id="period-2020">
     <h2>2020 — New Chapter</h2>
+    <p class="caption">We kept growing stronger</p>
     <div class="swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/2020-1.jpg" alt=""><p>We kept growing</p></div>
-        <div class="swiper-slide"><img src="images/2020-2.jpg" alt=""><p>Through ups and downs</p></div>
+        <div class="swiper-slide"><img src="images/2020/1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/2020/2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/2020/3.jpg" alt=""></div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
     </div>
   </section>
 
-  <!-- Closing -->
-  <section class="closing" data-aos="fade-in">
-    <h2>Thank You for Sharing Our Journey 💕</h2>
-    <p>Every moment tells a story, and this is ours.</p>
-  </section>
+  <footer>
+    <p>Made with ❤️ by Guntur Awaludin Saptadi</p>
+  </footer>
 
-  <!-- JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="js/main.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
