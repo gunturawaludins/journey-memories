@@ -1,0 +1,281 @@
+/* --- 1. VARIABEL & RESET DASAR --- */
+:root {
+  --primary-color: #a87f54; /* Cokelat Emas/Bronze yang Elegan */
+  --secondary-color: #fcfcfc;
+  --text-color: #333333;
+  --light-text-color: #6a6a6a;
+  --background-color: #ffffff;
+  --font-heading: 'Great Vibes', cursive;
+  --font-body: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.7;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  overflow-x: hidden;
+  /* Tambahkan efek smooth scroll agar terasa lebih halus */
+  scroll-behavior: smooth; 
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* --- TOMBOL MUSIC (FIXED POSITION) --- */
+.music-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; 
+    background-color: rgba(168, 127, 84, 0.9); 
+    color: white;
+    border: 2px solid white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: var(--font-body);
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.music-toggle-btn:hover {
+    background-color: #7c5e3c;
+    transform: scale(1.05);
+}
+
+/* --- 2. HERO SECTION (LEBIH HIDUP) --- */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* background: url('images/hero-bg.jpg') center center/cover no-repeat fixed; (fixed memberi efek parallax) */
+  background: url('images/hero-bg.jpg') center center/cover no-repeat fixed;
+  color: white;
+  z-index: 50; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55); /* Lebih gelap sedikit untuk kontras */
+  z-index: 10; 
+}
+
+.hero-text {
+  position: relative;
+  z-index: 20; 
+  padding: 20px;
+  /* Efek drop shadow pada teks agar terlihat 3D dan elegan */
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.elegant-title {
+  font-family: var(--font-heading);
+  font-size: 6rem;
+  margin-bottom: 10px;
+  color: white; /* Pastikan warna tetap putih */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    margin-top: 25px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #7c5e3c;
+    transform: translateY(-2px);
+}
+
+
+/* --- 3. MAIN CONTENT & PERIODE (RATA TENGAH) --- */
+main {
+    padding-top: 50px;
+    z-index: 40; 
+    position: relative;
+}
+
+.period {
+  padding: 80px 5%;
+  text-align: center;
+}
+
+.period-header {
+    /* PERBAIKAN: Memastikan semua teks rata tengah */
+    text-align: center; 
+    margin-bottom: 40px;
+}
+
+.period h2 {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.caption {
+    font-style: italic;
+    color: var(--light-text-color);
+    margin-top: -10px;
+}
+
+/* --- 4. SWIPER (CAROUSEL) CUSTOMISASI --- */
+.swiper {
+  width: 95%;
+  max-width: 1000px;
+  height: 450px; 
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  background-color: #f0f0f0; 
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  display: block;
+  max-width: 100%; 
+  height: 100%;  
+  object-fit: contain; /* Mencegah pemotongan foto */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* --- 5. MESSAGE/BREAK SECTION --- */
+.message {
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.period-break {
+    background-color: #eee;
+    margin: 40px 0;
+}
+
+.period-break p {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: #704214;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.message-tag {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #999;
+    letter-spacing: 1px;
+}
+
+/* --- 6. FINAL HIGHLIGHT (LPPI FOTO STAND-ALONE) --- */
+.final-highlight {
+    background-color: var(--background-color); 
+    padding: 100px 5%;
+}
+
+.final-highlight .elegant-title {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.highlight-photos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 50px auto 0;
+}
+
+.highlight-photo {
+    flex: 1;
+    max-width: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 5px solid var(--primary-color); 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+}
+
+.highlight-photo img {
+    width: 100%;
+    object-fit: cover; 
+    height: 350px; 
+    display: block;
+}
+
+/* --- 7. FINAL MESSAGE --- */
+.final-message {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 100px 5%;
+}
+
+.final-message .elegant-title {
+    color: white;
+    font-size: 4rem;
+}
+
+.signature {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-top: 20px;
+    display: block;
+}
+
+/* --- FOOTER --- */
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--light-text-color);
+}
+
+/* --- MEDIA QUERIES --- */
+@media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll; /* Hilangkan parallax di mobile */
+    }
+    .elegant-title {
+        font-size: 4rem;
+    }
+    .period-break p {
+        font-size: 1.8rem;
+    }
+    .highlight-photos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
